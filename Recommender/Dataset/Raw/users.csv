@@ -1,0 +1,101 @@
+user_id,username,email,region,pays,preferences_cuisine,regime_alimentaire,date_inscription
+1,rane_cook,rane@example.com,Casablanca,Maroc,"marocaine,italienne",normal,2025-01-15
+2,fatima_z,fatima@example.com,Rabat,Maroc,marocaine,sans gluten,2025-02-10
+3,mehdi_chef,mehdi@example.com,Marrakech,Maroc,"française,italienne,marocaine",normal,2025-03-05
+4,sara_vegan,sara@example.com,Casablanca,Maroc,japonaise,végétalien,2025-01-20
+5,youssef_g,youssef@example.com,Fes,Maroc,marocaine,normal,2025-04-12
+6,laila_m,laila@example.com,Agadir,Maroc,"marocaine,espagnole",sans gluten,2025-02-28
+7,omar_fit,omar@example.com,Casablanca,Maroc,"chinoise,américaine",sans gluten,2025-05-01
+8,nadia_k,nadia@example.com,Tanger,Maroc,"française,italienne",végétarien,2025-03-18
+9,hamid_r,hamid@example.com,Meknes,Maroc,"marocaine,chinoise",normal,2025-06-02
+10,zineb_a,zineb@example.com,Oujda,Maroc,"marocaine,turque",normal,2025-01-08
+11,nadir_lam_29,nadir.lamrani@example.com,Kenitra,Maroc,"marocaine,libanaise,française",normal,2025-01-16
+12,larbi_wah_4,larbi.wahbi@example.com,Al Hoceima,Maroc,marocaine,sans gluten,2025-10-28
+13,fatima_tam_21,fatima.tamekkate@example.com,Tataouine,Tunisie,"indienne,française",végétarien,2025-04-20
+14,aissa_lah_46,aissa.lahmidi@example.com,Manouba,Tunisie,"espagnole,marocaine,française",normal,2025-07-12
+15,assia_zah_47,assia.zahid@example.com,Youssoufia,Maroc,marocaine,végétarien,2025-05-28
+16,rachida_iss_36,rachida.issaoui@example.com,Sidi Slimane,Maroc,"marocaine,moyen-orientale,française",végétalien,2025-12-25
+17,salma_jou_94,salma.joudar@example.com,Nador,Maroc,marocaine,végétarien,2025-12-16
+18,khadija_jel_5,khadija.jelloun@example.com,Nabeul,Tunisie,"indienne,italienne",végétarien,2025-10-17
+19,kader_kha_83,kader.kharbouch@example.com,Jendouba,Tunisie,espagnole,végétarien,2025-05-06
+20,dalia_rgu_52,dalia.rguibi@example.com,Manouba,Tunisie,mexicaine,sans gluten,2025-02-16
+21,oumaima_aar_21,oumaima.aarab@example.com,Azrou,Maroc,"marocaine,japonaise",sans gluten,2025-09-27
+22,amina_har_93,amina.harrak@example.com,Kairouan,Tunisie,"japonaise,indienne,indienne",normal,2025-05-30
+23,jean_ada_93,jean.adam@example.com,Dijon,France,"moyen-orientale,malaisienne,coréenne",végétalien,2025-11-23
+24,abdelkader_ait_70,abdelkader.aitbenhaddou@example.com,Alger,Algerie,"coréenne,vietnamienne,marocaine",normal,2025-07-04
+25,ibrahim_naf_11,ibrahim.nafis@example.com,Sousse,Tunisie,"vietnamienne,italienne,japonaise",végétarien,2025-03-06
+26,audrey_dup_68,audrey.dupuy@example.com,Montreuil,France,"française,libanaise",végétarien,2025-12-31
+27,fadel_dri_48,fadel.driouech@example.com,Jendouba,Tunisie,"chinoise,japonaise,française",végétarien,2025-02-02
+28,younes_jel_76,younes.jelloun@example.com,Gafsa,Tunisie,italienne,normal,2025-04-27
+29,nisrine_idr_66,nisrine.idrissi@example.com,Nador,Maroc,"marocaine,française",sans gluten,2025-05-04
+30,delphine_lef_13,delphine.lefebvre@example.com,Nanterre,France,"vietnamienne,chinoise",sans gluten,2025-08-27
+31,aziza_lah_8,aziza.lahmidi@example.com,Taourirt,Maroc,"marocaine,coréenne,française",sans gluten,2025-03-12
+32,jerome_lef_10,jerome.lefevre@example.com,Perpignan,France,"japonaise,marocaine,libanaise",normal,2025-02-17
+33,jawad_bak_28,jawad.bakhat@example.com,Relizane,Algerie,libanaise,sans gluten,2025-01-02
+34,jerome_mor_55,jerome.morin@example.com,Vitry-sur-Seine,France,"vietnamienne,grecque,mexicaine",végétalien,2025-04-21
+35,wissal_gha_96,wissal.ghazi@example.com,Khemisset,Maroc,marocaine,végétarien,2025-01-30
+36,hanae_tou_9,hanae.touzani@example.com,Azrou,Maroc,marocaine,végétarien,2025-10-23
+37,chaimae_el__75,chaimae.elouazzani@example.com,Youssoufia,Maroc,"marocaine,espagnole,japonaise",végétalien,2025-05-02
+38,fadel_chr_39,fadel.chraibi@example.com,Jendouba,Tunisie,"italienne,marocaine",sans gluten,2025-11-14
+39,walid_el__34,walid.elmansouri@example.com,Kenitra,Maroc,"marocaine,française",végétarien,2025-08-12
+40,badia_ham_2,badia.hami@example.com,Tozeur,Tunisie,"américaine,coréenne,mexicaine",végétalien,2025-02-29
+41,oumaima_ouf_37,oumaima.oufkir@example.com,Boujdour,Maroc,marocaine,végétalien,2025-09-15
+42,jacques_mic_82,jacques.michel@example.com,Amiens,France,"marocaine,marocaine",végétalien,2025-03-07
+43,bilal_lem_91,bilal.lemsih@example.com,Beja,Tunisie,"marocaine,thailandaise,italienne",végétarien,2025-10-06
+44,afaf_lem_19,afaf.lemsih@example.com,Sidi Kacem,Maroc,marocaine,normal,2025-07-02
+45,chafia_man_46,chafia.mansouri@example.com,Guelma,Algerie,"grecque,américaine,moyen-orientale",végétarien,2025-07-30
+46,abdelilah_mou_86,abdelilah.moussaoui@example.com,Sidi Bennour,Maroc,marocaine,normal,2025-07-14
+47,maya_fil_59,maya.filali@example.com,Berrechid,Maroc,"marocaine,grecque",végétarien,2025-07-23
+48,said_waz_36,said.wazzani@example.com,Manouba,Tunisie,"indienne,venezuelienne,japonaise",végétalien,2025-01-15
+49,bouchra_che_75,bouchra.cherkaoui@example.com,Taza,Maroc,marocaine,végétalien,2025-06-09
+50,xaviere_rou_50,xaviere.roux@example.com,Argenteuil,France,indonesienne,normal,2025-12-28
+51,oscar_fon_93,oscar.fontaine@example.com,Pau,France,"italienne,italienne,mexicaine",normal,2025-12-06
+52,baya_oua_93,baya.ouazzani@example.com,Ben Arous,Tunisie,"marocaine,coréenne,coréenne",sans gluten,2025-12-22
+53,houda_naj_86,houda.naji@example.com,Medenine,Tunisie,"moyen-orientale,américaine,venezuelienne",normal,2025-06-04
+54,abdeslam_wah_84,abdeslam.wahbi@example.com,Nabeul,Tunisie,"française,française",sans gluten,2025-03-27
+55,elarbi_ben_80,elarbi.bennouna@example.com,Guelmim,Maroc,marocaine,végétarien,2025-04-11
+56,ismail_abb_79,ismail.abbadi@example.com,Blida,Algerie,"peruvienne,mexicaine",sans gluten,2025-09-10
+57,victor_pou_1,victor.poulain@example.com,Calais,France,chinoise,végétarien,2025-03-31
+58,georges_dav_59,georges.david@example.com,Bordeaux,France,"française,japonaise",sans gluten,2025-11-09
+59,alice_meu_21,alice.meunier@example.com,Pau,France,"chinoise,espagnole",végétarien,2025-11-22
+60,rihab_cha_81,rihab.chaoui@example.com,Gafsa,Tunisie,"française,italienne",végétalien,2025-04-30
+61,taha_jab_18,taha.jabiri@example.com,Bizerte,Tunisie,japonaise,végétarien,2025-12-27
+62,amin_cha_70,amin.chafik@example.com,Laghouat,Algerie,"italienne,japonaise",sans gluten,2025-07-18
+63,adiba_iss_62,adiba.issaoui@example.com,Casablanca,Maroc,"américaine,japonaise",sans gluten,2025-10-02
+64,mustapha_rac_63,mustapha.rachidi@example.com,Oran,Algerie,"indienne,venezuelienne",végétarien,2025-08-27
+65,tasnim_cha_51,tasnim.chakir@example.com,Oran,Algerie,chinoise,végétarien,2025-08-24
+66,aissa_bar_28,aissa.barakat@example.com,Laghouat,Algerie,"indienne,espagnole",végétalien,2025-08-03
+67,jihane_ben_96,jihane.bennani@example.com,Kebili,Tunisie,turque,végétarien,2025-11-28
+68,badia_el__97,badia.elamrani@example.com,Rabat,Maroc,italienne,végétarien,2025-05-02
+69,badr_naf_28,badr.nafis@example.com,Laghouat,Algerie,"indonesienne,française,israelienne",normal,2025-03-24
+70,omar_zer_74,omar.zerhouni@example.com,Tozeur,Tunisie,"russe,italienne",normal,2025-10-30
+71,abdelmalek_uba_88,abdelmalek.ubach@example.com,Tlemcen,Algerie,"marocaine,turque,japonaise",sans gluten,2025-12-04
+72,chakib_dri_2,chakib.driouch@example.com,Beja,Tunisie,"coréenne,mexicaine",végétalien,2025-11-21
+73,solene_lam_94,solene.lambert@example.com,Rouen,France,"indienne,japonaise,française",sans gluten,2025-08-11
+74,ismail_kab_36,ismail.kabbaj@example.com,Jendouba,Tunisie,japonaise,sans gluten,2025-06-21
+75,abdelhak_dou_63,abdelhak.doukkali@example.com,El Jadida,Maroc,"marocaine,indienne",végétalien,2025-10-11
+76,houda_jab_31,houda.jabiri@example.com,Asilah,Maroc,"marocaine,américaine",sans gluten,2025-08-17
+77,zakaria_lou_89,zakaria.louahdi@example.com,Nador,Maroc,"marocaine,chinoise",végétalien,2025-08-05
+78,faouzi_ouf_40,faouzi.oufkir@example.com,Monastir,Tunisie,japonaise,végétarien,2025-06-10
+79,gita_dou_25,gita.doukkali@example.com,El Jadida,Maroc,"marocaine,française,française",normal,2025-04-09
+80,mounir_uba_2,mounir.ubach@example.com,Tataouine,Tunisie,"indienne,française,marocaine",normal,2025-10-10
+81,latifa_ben_97,latifa.bennouna@example.com,Kasserine,Tunisie,marocaine,végétalien,2025-08-28
+82,claude_dur_33,claude.durand@example.com,Besancon,France,italienne,sans gluten,2025-09-08
+83,fadila_fas_20,fadila.fassi@example.com,Tetouan,Maroc,"marocaine,française",sans gluten,2025-11-06
+84,yasmina_tou_57,yasmina.touimi@example.com,Jijel,Algerie,"chinoise,marocaine,italienne",normal,2025-04-16
+85,hamza_ait_31,hamza.aitbenhaddou@example.com,Tizi Ouzou,Algerie,"italienne,moyen-orientale,marocaine",sans gluten,2025-08-18
+86,robert_mor_91,robert.morin@example.com,Nimes,France,"française,italienne,hawaienne",végétalien,2025-11-16
+87,taha_ibr_83,taha.ibrahimi@example.com,Biskra,Algerie,"mexicaine,italienne",normal,2025-03-25
+88,abir_sef_57,abir.sefrioui@example.com,Kairouan,Tunisie,"américaine,venezuelienne",végétalien,2025-09-13
+89,stephane_ric_56,stephane.richard@example.com,Pau,France,"indonesienne,marocaine",normal,2025-04-27
+90,djamila_ouf_74,djamila.oufkir@example.com,Marrakech,Maroc,marocaine,sans gluten,2025-05-22
+91,elham_ben_63,elham.bennouna@example.com,Batna,Algerie,"turque,coréenne",végétalien,2025-06-13
+92,nisrine_mou_89,nisrine.moussaoui@example.com,Essaouira,Maroc,"venezuelienne,marocaine",végétalien,2025-05-09
+93,abdelmalek_lou_66,abdelmalek.louahdi@example.com,Tunis,Tunisie,"libanaise,japonaise,coréenne",normal,2025-04-06
+94,mounia_aar_57,mounia.aarab@example.com,Sfax,Tunisie,indienne,végétarien,2025-05-27
+95,wendy_dav_4,wendy.david@example.com,Dunkerque,France,"américaine,moyen-orientale,marocaine",normal,2025-10-09
+96,francois_gui_16,francois.guillaume@example.com,Tourcoing,France,française,végétalien,2025-09-17
+97,idriss_abb_32,idriss.abbadi@example.com,Jendouba,Tunisie,"mexicaine,japonaise",végétarien,2025-02-05
+98,chaimae_dri_65,chaimae.driouch@example.com,Monastir,Tunisie,japonaise,végétalien,2025-10-27
+99,therese_col_62,therese.colin@example.com,Aix-en-Provence,France,"libanaise,espagnole",sans gluten,2025-06-13
+100,sanaa_oul_50,sanaa.oulad@example.com,El Oued,Algerie,"marocaine,japonaise",sans gluten,2025-12-27

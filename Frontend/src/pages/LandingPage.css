@@ -1,0 +1,102 @@
+.landing { background: var(--bg); min-height: 100vh; overflow-x: hidden; }
+
+.landing-nav {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 1.25rem 5%; background: var(--surface); border-bottom: 1px solid var(--border);
+}
+.landing-nav__logo { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; color: var(--primary); }
+.landing-nav__actions { display: flex; gap: .75rem; }
+.landing-nav__btn {
+  padding: .6rem 1.4rem; border-radius: 999px; font-size: .9rem; font-weight: 700;
+  cursor: pointer; transition: var(--transition); border: none;
+}
+.landing-nav__btn--ghost { background: transparent; color: var(--text); border: 1px solid var(--border); }
+.landing-nav__btn--ghost:hover { border-color: var(--primary); color: var(--primary); }
+.landing-nav__btn--primary { background: var(--primary); color: #fff; box-shadow: 0 4px 14px rgba(233,30,99,.3); }
+.landing-nav__btn--primary:hover { background: var(--primary-dark); transform: translateY(-1px); }
+
+.landing-hero {
+  display: flex; align-items: center; justify-content: space-between; gap: 3rem;
+  max-width: 1180px; margin: 0 auto; padding: 4rem 5% 5rem; flex-wrap: wrap;
+  position: relative;
+}
+/* Breaks the background out to the full viewport width (edge to edge)
+   regardless of .landing-hero's own centered max-width — left:50% +
+   translateX(-50%) re-centers a 100vw-wide box under this element no
+   matter how narrow or wide the page container itself is. */
+.landing-hero::before {
+  content: '';
+  position: absolute;
+  top: 0; bottom: 0;
+  left: 50%; width: 100vw;
+  transform: translateX(-50%);
+  background-image: url('../assets/images/landing-bg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+.landing-hero__text {
+  flex: 1 1 420px; max-width: 560px;
+  position: relative; z-index: 1;
+  background: rgba(255,251,248,.92);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+}
+.landing-hero__kicker {
+  display: inline-block; background: var(--primary-light); color: var(--primary-dark);
+  font-size: .78rem; font-weight: 700; padding: .35rem .9rem; border-radius: 999px; margin-bottom: 1.2rem;
+}
+.landing-hero__title { font-family: var(--font-display); font-size: 2.8rem; line-height: 1.15; color: var(--text); margin-bottom: 1.2rem; }
+.landing-hero__title span { color: var(--primary); }
+.landing-hero__sub { font-size: 1.05rem; color: var(--text-2); line-height: 1.65; margin-bottom: 2rem; }
+.landing-hero__cta { display: flex; gap: .9rem; flex-wrap: wrap; }
+.landing-hero__cta-btn { font-size: 1rem; padding: .85rem 1.8rem; }
+
+.landing-hero__mascot {
+  flex: 0 0 280px; display: flex; align-items: center; justify-content: center;
+  background: linear-gradient(160deg, var(--primary-dark) 0%, var(--secondary) 100%);
+  border-radius: var(--radius-lg); padding: 2.5rem 1rem 1.5rem; min-height: 360px;
+  box-shadow: var(--shadow-lg);
+  position: relative; z-index: 1;
+}
+
+.landing-features { max-width: 1100px; margin: 0 auto; padding: 1rem 5% 5rem; text-align: center; }
+.landing-section-title { font-family: var(--font-display); font-size: 1.9rem; margin-bottom: 2.5rem; color: var(--text); }
+.landing-features__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+.landing-feature {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 1.75rem 1.25rem; text-align: left; transition: var(--transition);
+}
+.landing-feature:hover { transform: translateY(-3px); box-shadow: var(--shadow); border-color: var(--primary); }
+.landing-feature__icon { font-size: 1.8rem; display: block; margin-bottom: .75rem; }
+.landing-feature h3 { font-size: 1.02rem; margin-bottom: .5rem; color: var(--text); }
+.landing-feature p { font-size: .87rem; color: var(--text-2); line-height: 1.55; }
+
+.landing-banner {
+  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--secondary) 100%);
+  margin: 0 5% 5rem; border-radius: var(--radius-lg);
+  padding: 3rem 2rem; text-align: center;
+}
+.landing-banner h2 { font-family: var(--font-display); font-size: 1.7rem; color: #fff; margin-bottom: 1.5rem; }
+
+.landing-footer {
+  background: #1A1A2E; color: rgba(255,255,255,.75);
+  padding: 3rem 5% 2rem; text-align: center;
+}
+.landing-footer__logo { font-family: var(--font-display); font-size: 1.3rem; color: #fff; display: block; margin-bottom: .5rem; }
+.landing-footer__top p { font-size: .9rem; margin-bottom: 1.5rem; }
+.landing-footer__contact { font-size: .9rem; margin-bottom: 1.5rem; }
+.landing-footer__contact a { color: var(--accent); font-weight: 600; text-decoration: none; margin-left: .4rem; }
+.landing-footer__contact a:hover { text-decoration: underline; }
+.landing-footer__copy { font-size: .78rem; color: rgba(255,255,255,.45); border-top: 1px solid rgba(255,255,255,.1); padding-top: 1.5rem; }
+
+@media (max-width: 900px) {
+  .landing-features__grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 640px) {
+  .landing-hero { flex-direction: column; }
+  .landing-hero__title { font-size: 2.1rem; }
+  .landing-features__grid { grid-template-columns: 1fr; }
+  .landing-nav__btn { padding: .5rem 1rem; font-size: .82rem; }
+}

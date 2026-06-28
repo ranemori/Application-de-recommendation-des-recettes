@@ -1,0 +1,101 @@
+user_id,region,pays,regime_normal,regime_sans gluten,regime_végétalien,regime_végétarien,pref_cuisine_américaine,pref_cuisine_chinoise,pref_cuisine_coréenne,pref_cuisine_espagnole,pref_cuisine_française,pref_cuisine_grecque,pref_cuisine_hawaienne,pref_cuisine_indienne,pref_cuisine_indonesienne,pref_cuisine_israelienne,pref_cuisine_italienne,pref_cuisine_japonaise,pref_cuisine_libanaise,pref_cuisine_malaisienne,pref_cuisine_marocaine,pref_cuisine_mexicaine,pref_cuisine_moyen-orientale,pref_cuisine_peruvienne,pref_cuisine_russe,pref_cuisine_thailandaise,pref_cuisine_turque,pref_cuisine_venezuelienne,pref_cuisine_vietnamienne
+1,Casablanca,Maroc,True,False,False,False,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0
+2,Rabat,Maroc,False,True,False,False,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+3,Marrakech,Maroc,True,False,False,False,0,0,0,0,1,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0
+4,Casablanca,Maroc,False,False,True,False,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+5,Fes,Maroc,True,False,False,False,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+6,Agadir,Maroc,False,True,False,False,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+7,Casablanca,Maroc,False,True,False,False,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+8,Tanger,Maroc,False,False,False,True,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+9,Meknes,Maroc,True,False,False,False,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+10,Oujda,Maroc,True,False,False,False,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0
+11,Kenitra,Maroc,True,False,False,False,0,0,0,0,1,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0
+12,Al Hoceima,Maroc,False,True,False,False,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+13,Tataouine,Tunisie,False,False,False,True,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+14,Manouba,Tunisie,True,False,False,False,0,0,0,1,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+15,Youssoufia,Maroc,False,False,False,True,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+16,Sidi Slimane,Maroc,False,False,True,False,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0
+17,Nador,Maroc,False,False,False,True,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+18,Nabeul,Tunisie,False,False,False,True,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+19,Jendouba,Tunisie,False,False,False,True,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+20,Manouba,Tunisie,False,True,False,False,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+21,Azrou,Maroc,False,True,False,False,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0
+22,Kairouan,Tunisie,True,False,False,False,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+23,Dijon,France,False,False,True,False,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0
+24,Alger,Algerie,True,False,False,False,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1
+25,Sousse,Tunisie,False,False,False,True,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1
+26,Montreuil,France,False,False,False,True,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+27,Jendouba,Tunisie,False,False,False,True,0,1,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+28,Gafsa,Tunisie,True,False,False,False,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+29,Nador,Maroc,False,True,False,False,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+30,Nanterre,France,False,True,False,False,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+31,Taourirt,Maroc,False,True,False,False,0,0,1,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+32,Perpignan,France,True,False,False,False,0,0,0,0,0,0,0,0,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0
+33,Relizane,Algerie,False,True,False,False,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+34,Vitry-sur-Seine,France,False,False,True,False,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1
+35,Khemisset,Maroc,False,False,False,True,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+36,Azrou,Maroc,False,False,False,True,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+37,Youssoufia,Maroc,False,False,True,False,0,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0
+38,Jendouba,Tunisie,False,True,False,False,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0
+39,Kenitra,Maroc,False,False,False,True,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+40,Tozeur,Tunisie,False,False,True,False,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+41,Boujdour,Maroc,False,False,True,False,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+42,Amiens,France,False,False,True,False,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+43,Beja,Tunisie,False,False,False,True,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,1,0,0,0
+44,Sidi Kacem,Maroc,True,False,False,False,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+45,Guelma,Algerie,False,False,False,True,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+46,Sidi Bennour,Maroc,True,False,False,False,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+47,Berrechid,Maroc,False,False,False,True,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+48,Manouba,Tunisie,False,False,True,False,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0
+49,Taza,Maroc,False,False,True,False,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+50,Argenteuil,France,True,False,False,False,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+51,Pau,France,True,False,False,False,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0
+52,Ben Arous,Tunisie,False,True,False,False,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+53,Medenine,Tunisie,True,False,False,False,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0
+54,Nabeul,Tunisie,False,True,False,False,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+55,Guelmim,Maroc,False,False,False,True,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+56,Blida,Algerie,False,True,False,False,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0
+57,Calais,France,False,False,False,True,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+58,Bordeaux,France,False,True,False,False,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+59,Pau,France,False,False,False,True,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+60,Gafsa,Tunisie,False,False,True,False,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+61,Bizerte,Tunisie,False,False,False,True,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+62,Laghouat,Algerie,False,True,False,False,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+63,Casablanca,Maroc,False,True,False,False,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+64,Oran,Algerie,False,False,False,True,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+65,Oran,Algerie,False,False,False,True,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+66,Laghouat,Algerie,False,False,True,False,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+67,Kebili,Tunisie,False,False,False,True,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+68,Rabat,Maroc,False,False,False,True,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+69,Laghouat,Algerie,True,False,False,False,0,0,0,0,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+70,Tozeur,Tunisie,True,False,False,False,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0
+71,Tlemcen,Algerie,False,True,False,False,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,1,0,0
+72,Beja,Tunisie,False,False,True,False,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+73,Rouen,France,False,True,False,False,0,0,0,0,1,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+74,Jendouba,Tunisie,False,True,False,False,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+75,El Jadida,Maroc,False,False,True,False,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+76,Asilah,Maroc,False,True,False,False,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+77,Nador,Maroc,False,False,True,False,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+78,Monastir,Tunisie,False,False,False,True,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+79,El Jadida,Maroc,True,False,False,False,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+80,Tataouine,Tunisie,True,False,False,False,0,0,0,0,1,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+81,Kasserine,Tunisie,False,False,True,False,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+82,Besancon,France,False,True,False,False,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+83,Tetouan,Maroc,False,True,False,False,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+84,Jijel,Algerie,True,False,False,False,0,1,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0
+85,Tizi Ouzou,Algerie,False,True,False,False,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,0
+86,Nimes,France,False,False,True,False,0,0,0,0,1,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+87,Biskra,Algerie,True,False,False,False,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0
+88,Kairouan,Tunisie,False,False,True,False,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+89,Pau,France,True,False,False,False,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+90,Marrakech,Maroc,False,True,False,False,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+91,Batna,Algerie,False,False,True,False,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+92,Essaouira,Maroc,False,False,True,False,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0
+93,Tunis,Tunisie,True,False,False,False,0,0,1,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0
+94,Sfax,Tunisie,False,False,False,True,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+95,Dunkerque,France,True,False,False,False,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0
+96,Tourcoing,France,False,False,True,False,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+97,Jendouba,Tunisie,False,False,False,True,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0
+98,Monastir,Tunisie,False,False,True,False,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+99,Aix-en-Provence,France,False,True,False,False,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+100,El Oued,Algerie,False,True,False,False,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0

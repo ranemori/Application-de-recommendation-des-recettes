@@ -1,0 +1,117 @@
+ingredient_id,name,categorie,unite_standard,allergen
+1,poulet,viande,g,
+2,boeuf haché,viande,g,
+3,agneau,viande,g,
+4,porc,viande,g,
+5,saumon,poisson,g,poisson
+6,crevettes,fruits de mer,g,poisson
+7,tomates,légumes,g,
+8,oignons,légumes,g,
+9,ail,condiments,gousse,
+10,gingembre,épices,g,
+11,huile d'olive,matières grasses,cuillère à  soupe,
+12,beurre,matières grasses,g,lait
+13,farine,féculents,g,gluten
+14,riz,féculents,g,
+15,pâtes,féculents,g,gluten
+16,lentilles,légumineuses,g,
+17,pois chiches,légumineuses,g,
+18,oeufs,produits laitiers,pièce,oeufs
+19,fromage,produits laitiers,g,lait
+20,crème fraîche,produits laitiers,ml,lait
+21,lait de coco,produits laitiers végétaux,ml,
+22,sauce soja,condiments,cuillère à  soupe,"soja,gluten"
+23,curcuma,épices,cuillère à  café,
+24,cumin,épices,cuillère à  café,
+25,cannelle,épices,cuillère à  café,
+26,paprika,épices,cuillère à  café,
+27,coriandre fraîche,herbes,bouquet,
+28,persil,herbes,bouquet,
+29,thym,herbes,brin,
+30,romarin,herbes,brin,
+31,citron,fruits,pièce,
+32,avocat,fruits,pièce,
+33,tomates concassées,conserves,g,
+34,pâte filo,pâtisserie,g,gluten
+35,pâte brisée,pâtisserie,g,"gluten,lait"
+36,olives,légumes,g,
+37,citron confit,conserves,pièce,
+38,aubergines,légumes,pièce,
+39,courgettes,légumes,pièce,
+40,poivrons,légumes,pièce,
+41,carottes,légumes,pièce,
+42,pommes de terre,féculents,pièce,
+43,mascarpone,produits laitiers,g,lait
+44,parmesan,produits laitiers,g,lait
+45,mozzarella,produits laitiers,g,lait
+46,tahini,condiments,cuillère à  soupe,sésame
+47,gochujang,condiments,cuillère à  soupe,gluten
+48,miso,condiments,cuillère à  soupe,soja
+49,haricots rouges,légumineuses,g,
+50,lardons,charcuterie,g,
+51,ras el hanout,herbes,cuillère à  soupe,
+52,chou,légumes,g,
+53,mayonnaise,condiments,cuillère à  soupe,oeufs
+54,sauce okonomiyaki,condiments,cuillère à  soupe,gluten
+55,poitrine fumée,charcuterie,g,
+56,boeuf,viande,g,
+57,sel,épices,cuillère à  café,
+58,sucre,épices,cuillère à  café,
+59,poivre,épices,cuillère à  café,
+60,huile de sésame,matières grasses,cuillère à  soupe,sésame
+61,tteokbokki,féculents,g,gluten
+62,épinards,légumes,g,
+63,panner,produits laitiers,g,lait
+64,nouilles de riz,féculents,g,gluten
+65,étoiles de badiane,épices,pièce,
+66,clous de girofle,épices,pièce,
+67,bâton de cannelle,épices,pièce,
+68,germes de soja,légumes,g,soja
+69,menthe,herbes,bouquet,
+70,sauce de poisson,condiments,cuillère à  soupe,poisson
+71,feuilles de lasagne,féculents,g,gluten
+72,lait,produits laitiers,ml,lait
+73,mais,légumes,pièce,
+74,pate de piment,épices,cuillère à  café,
+75,laurier,herbes,brin,
+76,moules,poisson,g,poisson
+77,chorizo,viande,g,
+78,Le bouillon de volaille,matières grasses,ml,
+79,safran,épices,cuillère à  café,
+80,oignons verts,légumes,g,
+81,wrappers gyoza,féculents,pièce,gluten
+82,huile vegetale,matières grasses,cuillère à  soupe,
+83,champignons,légumes,g,
+84,moutarde,condiments,cuillère à  soupe,oeufs
+85,eau,matières grasses,ml,
+86,jambon,charcuterie,g,
+87,fromage blanc,produits laitiers,g,lait
+88,farine de mais,féculents,g,
+89,kimchi,condiments,cuillère à  soupe,"soja,poisson"
+90,tofu,aliment,g,soja
+91,piment coreen,épices,cuillère à  café,
+92,poisson blanc,poisson,g,poisson
+93,piment jalapeno,légumes,pièce,
+94,tortillas de mais,féculents,pièce,gluten
+95,oignons rouges,légumes,pièce,
+96,echalotes,légumes,pièce,
+97,pousses de bambou,légumes,g,
+98,wrappers ronds,féculents,pièce,
+99,sucre glace,épices,cuillère à  café,
+100,sauce tempura,condiments,cuillère à  soupe,soja
+101,pommes,fruits,pièce,
+102,concombres,légumes,pièce,
+103,vinaigre de riz,condiments,cuillère à  soupe,
+104,vanille,épices,cuillère à  café,
+105,anchois,poisson,g,poisson
+106,cacahuetes,légumes,g,arachide
+107,sambal,condiments,cuillère à  soupe,
+108,feuille de pandan,herbes,brin,
+109,curry,épices,cuillère à  café,
+110,feuilles de brick,féculents,pièce,gluten
+111,levure fraiche,levure,g,
+112,dashi,conserves,g,
+113,mirin,condiments,cuillère à  soupe,
+114,yaourt,produits laitiers,cuillère à  soupe,lait
+115,piment de Cayenne,épices,cuillère à  café,
+116,pain pita,féculents,pièce,gluten

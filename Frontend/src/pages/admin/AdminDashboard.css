@@ -1,0 +1,39 @@
+.adash-loading, .adash-error { display: flex; align-items: center; justify-content: center; height: 60vh; color: var(--text-2); }
+
+.adash-header { margin-bottom: 1.75rem; }
+.adash-title { font-family: var(--font-display); font-size: 1.6rem; }
+.adash-sub { color: var(--text-2); margin-top: .25rem; }
+
+.adash-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.75rem; }
+.adash-stat {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 1.1rem; display: flex; align-items: center; gap: .75rem;
+}
+.adash-stat__icon { font-size: 1.6rem; }
+.adash-stat strong { display: block; font-size: 1.4rem; }
+.adash-stat span { color: var(--text-2); font-size: .8rem; }
+
+.adash-grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: 1.25rem; }
+.adash-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.25rem; }
+.adash-card-title { font-size: 1rem; margin-bottom: 1rem; }
+
+.adash-userlist { list-style: none; display: flex; flex-direction: column; gap: .65rem; margin-bottom: 1rem; }
+.adash-userlist__item { display: flex; align-items: center; gap: .65rem; }
+.adash-userlist__avatar {
+  width: 34px; height: 34px; border-radius: 50%; background: var(--primary-light);
+  color: var(--primary-dark); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: .85rem; flex-shrink: 0;
+}
+.adash-userlist__info { display: flex; flex-direction: column; flex: 1; min-width: 0; }
+.adash-userlist__info span { font-size: .75rem; color: var(--text-2); overflow: hidden; text-overflow: ellipsis; }
+
+.adash-badge { font-size: .7rem; padding: .2rem .55rem; border-radius: 999px; }
+.adash-badge--active { background: var(--secondary-light); color: var(--secondary); }
+.adash-badge--inactive { background: #FDECEA; color: var(--danger); }
+
+.adash-link { color: var(--primary); font-size: .85rem; background: none; border: none; padding: 0; }
+.adash-empty { color: var(--text-3); font-size: .85rem; }
+
+@media (max-width: 900px) {
+  .adash-stats { grid-template-columns: repeat(2, 1fr); }
+  .adash-grid { grid-template-columns: 1fr; }
+}

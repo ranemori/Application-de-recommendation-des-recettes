@@ -1,0 +1,51 @@
+.profile-layout { min-height: 100vh; background: var(--bg); }
+.profile-main { max-width: 760px; margin: 0 auto; padding: 2.5rem 1.5rem 4rem; }
+
+.profile-header { display: flex; align-items: center; gap: 1.25rem; margin-bottom: 2rem; }
+.profile-avatar {
+  width: 64px; height: 64px; border-radius: 50%;
+  background: var(--primary); color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.5rem; font-weight: 700; flex-shrink: 0;
+  position: relative; overflow: hidden;
+}
+.profile-avatar--editable { cursor: pointer; }
+.profile-avatar-img { width: 100%; height: 100%; object-fit: cover; }
+.profile-avatar-overlay {
+  position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+  background: rgba(0,0,0,.55); color: #fff; font-size: .7rem; font-weight: 600;
+  opacity: 0; transition: opacity .15s;
+}
+.profile-avatar--editable:hover .profile-avatar-overlay { opacity: 1; }
+.profile-avatar-error { color: var(--danger); font-size: .8rem; margin-top: .25rem; }
+.profile-title { font-family: var(--font-display); font-size: 1.5rem; }
+.profile-email { color: var(--text-2); font-size: .9rem; }
+
+.profile-card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 1.5rem; margin-bottom: 1.25rem;
+}
+.profile-section-title { font-size: 1.05rem; margin-bottom: 1rem; }
+
+.profile-grid { display: grid; gap: 1rem; grid-template-columns: 1fr 1fr; }
+.profile-grid > *:first-child { grid-column: 1 / -1; }
+
+.profile-regime-row, .profile-cuisine-row { display: flex; flex-wrap: wrap; gap: .6rem; }
+
+.profile-regime-btn, .profile-cuisine-btn {
+  padding: .5rem 1rem; border-radius: 999px; border: 1px solid var(--border);
+  background: var(--surface-2); color: var(--text); font-size: .85rem;
+  transition: var(--transition);
+}
+.profile-regime-btn--active, .profile-cuisine-btn--active {
+  background: var(--primary); color: #fff; border-color: var(--primary);
+}
+
+.profile-error { background: #FDECEA; color: var(--danger); padding: .75rem 1rem; border-radius: var(--radius-sm); margin-bottom: 1rem; }
+.profile-success { background: var(--secondary-light); color: var(--secondary); padding: .75rem 1rem; border-radius: var(--radius-sm); margin-bottom: 1rem; }
+
+.profile-actions { display: flex; justify-content: flex-end; }
+
+@media (max-width: 600px) {
+  .profile-grid { grid-template-columns: 1fr; }
+}

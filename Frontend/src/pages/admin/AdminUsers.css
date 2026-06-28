@@ -1,0 +1,93 @@
+.ausers-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap; }
+.ausers-title { font-family: var(--font-display); font-size: 1.6rem; }
+.ausers-sub { color: var(--text-2); margin-top: .25rem; }
+.ausers-search {
+  padding: .6rem 1rem; border: 1px solid var(--border); border-radius: var(--radius-sm);
+  min-width: 260px; background: var(--surface);
+}
+
+.ausers-error { background: #FDECEA; color: var(--danger); padding: .75rem 1rem; border-radius: var(--radius-sm); margin-bottom: 1rem; }
+
+.ausers-table-wrap { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); overflow: auto; }
+.ausers-loading { display: flex; justify-content: center; padding: 3rem; }
+
+.ausers-table { width: 100%; border-collapse: collapse; font-size: .88rem; }
+.ausers-table th { text-align: left; padding: .85rem 1rem; color: var(--text-2); font-weight: 600; border-bottom: 1px solid var(--border); white-space: nowrap; }
+.ausers-table td { padding: .75rem 1rem; border-bottom: 1px solid var(--border); white-space: nowrap; }
+.ausers-table tr:last-child td { border-bottom: none; }
+
+.ausers-name-cell { display: flex; align-items: center; gap: .6rem; font-weight: 600; }
+.ausers-avatar {
+  width: 30px; height: 30px; border-radius: 50%; background: var(--primary-light); color: var(--primary-dark);
+  display: flex; align-items: center; justify-content: center; font-size: .8rem; font-weight: 700;
+}
+
+.ausers-role { padding: .15rem .55rem; border-radius: 999px; font-size: .75rem; background: var(--surface-2); }
+.ausers-role--admin { background: var(--primary-light); color: var(--primary-dark); }
+
+.ausers-status { padding: .15rem .55rem; border-radius: 999px; font-size: .75rem; }
+.ausers-status--active { background: var(--secondary-light); color: var(--secondary); }
+.ausers-status--inactive { background: #FDECEA; color: var(--danger); }
+
+.ausers-actions { display: flex; gap: .4rem; }
+.ausers-btn {
+  border: 1px solid var(--border); background: var(--surface-2); padding: .35rem .7rem;
+  border-radius: var(--radius-sm); font-size: .78rem; transition: var(--transition);
+}
+.ausers-btn:disabled { opacity: .4; cursor: not-allowed; }
+.ausers-btn--danger:hover:not(:disabled) { background: #FDECEA; color: var(--danger); border-color: var(--danger); }
+
+.ausers-empty { text-align: center; color: var(--text-3); padding: 2rem !important; }
+
+/* Activity modal */
+.auser-activity-backdrop {
+  position: fixed; inset: 0; background: rgba(0,0,0,.5);
+  display: flex; align-items: center; justify-content: center;
+  z-index: 1000; padding: 1.5rem;
+}
+.auser-activity-modal {
+  background: var(--surface); border-radius: var(--radius-lg);
+  width: 100%; max-width: 560px; max-height: 85vh; overflow-y: auto;
+  box-shadow: var(--shadow-lg);
+  display: flex; flex-direction: column;
+}
+.auser-activity-header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 1.25rem 1.5rem; border-bottom: 1px solid var(--border);
+  position: sticky; top: 0; background: var(--surface); z-index: 1;
+}
+.auser-activity-header h2 { font-size: 1.05rem; margin: 0; }
+.auser-activity-header p { font-size: .82rem; color: var(--text-2); margin: .15rem 0 0; }
+.auser-activity-close { border: none; background: none; font-size: 1.1rem; color: var(--text-2); cursor: pointer; }
+
+.auser-activity-tabs { display: flex; gap: .4rem; padding: 1rem 1.5rem 0; }
+.auser-activity-tab {
+  border: 1px solid var(--border); background: var(--surface-2);
+  padding: .4rem .85rem; border-radius: 99px; font-size: .8rem; font-weight: 600;
+  color: var(--text-2); cursor: pointer; transition: var(--transition);
+}
+.auser-activity-tab:hover { border-color: var(--primary); color: var(--primary); }
+.auser-activity-tab--active { background: var(--primary); color: #fff; border-color: var(--primary); }
+
+.auser-activity-body { padding: 1rem 1.5rem 1.5rem; min-height: 160px; }
+.auser-activity-empty { text-align: center; color: var(--text-3); padding: 2rem 0; }
+
+.auser-activity-list { display: flex; flex-direction: column; gap: .5rem; }
+.auser-activity-item {
+  display: flex; align-items: center; gap: .6rem; flex-wrap: wrap;
+  padding: .6rem .8rem; border: 1px solid var(--border); border-radius: var(--radius-sm);
+  font-size: .85rem;
+}
+.auser-activity-recipe { font-weight: 600; color: var(--text); }
+.auser-activity-cuisine { color: var(--text-2); font-size: .76rem; text-transform: uppercase; }
+.auser-activity-score { color: var(--primary); font-weight: 700; font-size: .78rem; }
+.auser-activity-date { margin-left: auto; color: var(--text-3); font-size: .76rem; }
+
+.auser-activity-badge {
+  font-size: .72rem; font-weight: 700; padding: .15rem .55rem; border-radius: 99px;
+}
+.auser-activity-badge--on { background: var(--primary-light, rgba(46,204,113,.15)); color: var(--primary); }
+.auser-activity-badge--off { background: var(--surface-2); color: var(--text-3); }
+
+.auser-activity-item--off { opacity: .55; }
+.auser-activity-item--off .auser-activity-recipe { text-decoration: line-through; }

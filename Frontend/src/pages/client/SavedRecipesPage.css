@@ -1,0 +1,2 @@
+.saved-loading { display: flex; justify-content: center; padding: 3rem 0; }
+.saved-empty-hint { color: var(--text-3); font-size: .85rem; margin-top: .4rem; }

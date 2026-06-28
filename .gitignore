@@ -1,0 +1,27 @@
+# ── Python (Backend) ──────────────────────────────────────────────
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+*.egg-info/
+
+# ── Node / React (Frontend) ───────────────────────────────────────
+node_modules/
+Frontend/build/
+npm-debug.log*
+
+# ── Environment / secrets ─────────────────────────────────────────
+.env
+.env.local
+Backend/.env
+
+# ── Editors / OS ───────────────────────────────────────────────────
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ── Logs ────────────────────────────────────────────────────────────
+*.log

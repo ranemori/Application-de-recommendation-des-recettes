@@ -1,0 +1,26 @@
+# ── Web framework ───────────────────────────────────────────────
+fastapi>=0.115,<0.116
+uvicorn[standard]>=0.34,<0.35
+python-multipart>=0.0.20,<0.1
+apscheduler>=3.10,<3.11
+
+# ── Database ────────────────────────────────────────────────────
+sqlalchemy>=2.0,<2.1
+psycopg2-binary>=2.9,<3.0
+
+# ── Settings & validation ───────────────────────────────────────
+pydantic>=2.10,<3.0
+pydantic-settings>=2.7,<3.0
+email-validator>=2.2,<3.0
+
+# ── Auth / security ──────────────────────────────────────────────
+python-jose[cryptography]>=3.3,<3.4
+passlib[bcrypt]>=1.7,<1.8
+bcrypt==4.0.1
+
+# ── Recommender (ALS) ────────────────────────────────────────────
+numpy>=1.26,<2.0
+scipy>=1.13,<1.14
+pandas>=2.2,<2.3
+scikit-learn>=1.5,<1.10
+implicit>=0.7,<0.8

@@ -1,0 +1,171 @@
+.character-mascot {
+  position: relative;
+  width: 200px;
+  height: 230px;
+  margin: 0 auto;
+}
+
+.cm-caption {
+  position: absolute;
+  top: 235px; left: 0; right: 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: .85rem;
+  color: rgba(255,255,255,.9);
+  margin: 0;
+}
+
+.character-mascot .cm-me {
+  transition: all .5s ease;
+  position: absolute;
+  left: 0; right: 0; margin: auto; top: 30px;
+  width: 80px; height: 160px;
+}
+
+.character-mascot .cm-head {
+  position: absolute;
+  width: 70px; height: 90px; top: 10px; left: 4px;
+  background: #b5612c;
+  border-radius: 100px;
+  transition: all .5s ease;
+}
+.character-mascot .cm-head.look-left { left: -10px; }
+.character-mascot .cm-head.look-right { left: 15px; }
+
+.character-mascot .cm-bangs {
+  position: absolute;
+  width: 94%; height: 50px; top: -12px;
+  transition: all .5s ease;
+}
+.character-mascot .cm-bangs span {
+  position: absolute;
+  width: 30px; height: 30px;
+  background: #1a1a1a;
+  border-radius: 100%;
+}
+.character-mascot .cm-bangs span:nth-child(2) { left: 20px; }
+.character-mascot .cm-bangs span:nth-child(3) { left: 40px; }
+.character-mascot .cm-bangs--upper { margin-top: -12px; }
+.character-mascot .cm-head.look-left .cm-bangs { width: 106%; left: -7px; }
+.character-mascot .cm-head.look-right .cm-bangs { width: 106%; left: 5px; }
+
+.character-mascot .cm-face {
+  transition: all .5s ease;
+  position: absolute;
+  top: 30px; left: 0;
+}
+.character-mascot .cm-face.look-left { left: -7px; }
+.character-mascot .cm-face.look-right { left: 5px; }
+
+.character-mascot .cm-eyes { display: flex; justify-content: space-between; }
+.character-mascot .cm-eyes::before,
+.character-mascot .cm-eyes::after {
+  content: '';
+  display: block;
+  position: relative;
+  width: 9px; height: 30px;
+  background: #1a1a1a;
+  border-radius: 200px;
+  margin: -2px 12px;
+  animation: cm-blink 4s infinite;
+  transition: all .5s ease;
+}
+
+.character-mascot .cm-glasses {
+  position: relative;
+  width: 5px; height: 2px;
+  background: #f89714;
+  left: 50%; top: 15px;
+}
+.character-mascot .cm-glasses__lens {
+  position: absolute;
+  width: 40px; height: 40px;
+  background: transparent;
+  border-radius: 100%;
+  border: 2px solid #f89714;
+  top: -22px;
+  overflow: hidden;
+  z-index: 2;
+}
+.character-mascot .cm-glasses__lens--left { left: -42px; }
+.character-mascot .cm-glasses__lens--right { left: 4px; }
+
+.character-mascot .cm-shine { position: absolute; }
+.character-mascot .cm-shine::before {
+  content: '';
+  position: absolute;
+  width: 20px; height: 100px;
+  background: #fff;
+  opacity: .3;
+  transform: rotate(30deg);
+  top: -30px; left: 5px;
+}
+
+.character-mascot .cm-neck {
+  position: absolute;
+  width: 20px; height: 60px;
+  background: #b5612c;
+  top: 60px; left: 30px;
+  border-radius: 0 0 100px 100px;
+  overflow: hidden;
+}
+.character-mascot .cm-neck::before {
+  content: '';
+  position: absolute;
+  width: 60px; height: 60px;
+  background: #99501f;
+  border-radius: 100%;
+  top: -12px; left: -18px;
+  transition: all .5s ease;
+}
+.character-mascot .cm-neck.look-left::before { left: -38px; }
+.character-mascot .cm-neck.look-right::before { left: -5px; }
+
+.character-mascot .cm-shirt {
+  position: absolute;
+  width: 80px; height: 40px;
+  background: #b51231;
+  top: 105px;
+  border-radius: 100px 100px 10px 10px;
+  overflow: hidden;
+}
+.character-mascot .cm-shirt::after {
+  content: '\2665';
+  position: absolute;
+  color: #8e0e27;
+  top: 15px; left: 50px;
+}
+
+.character-mascot .cm-hair {
+  transition: all .5s ease;
+  position: absolute;
+  width: 90px; height: 120px;
+  left: -8%; top: -10%;
+}
+.character-mascot .cm-row { position: absolute; }
+.character-mascot .cm-row span {
+  width: 30px; height: 30px;
+  border-radius: 100%;
+  background: #1a1a1a;
+  position: absolute;
+}
+.character-mascot .cm-row span:nth-child(1) { top: 5px; }
+.character-mascot .cm-row span:nth-child(2) { left: 30px; }
+.character-mascot .cm-row span:nth-child(3) { left: 60px; top: 5px; }
+.character-mascot .cm-row span:nth-child(4) { left: 15px; }
+.character-mascot .cm-row span:nth-child(5) { border-radius: 80%; left: 45px; }
+
+.character-mascot .cm-row--second { top: 20px; }
+.character-mascot .cm-row--third { top: 40px; }
+.character-mascot .cm-row--fourth { top: 60px; left: 2px; }
+.character-mascot .cm-row--fourth span { width: 25px; height: 25px; }
+.character-mascot .cm-row--fifth { top: 80px; left: 7.2px; }
+.character-mascot .cm-row--fifth span { width: 15px; height: 15px; }
+
+@keyframes cm-blink {
+  0%, 18% { transform: scaleY(1); }
+  20% { transform: scaleY(0); }
+  25%, 38% { transform: scaleY(1); }
+  40% { transform: scaleY(0); }
+  45%, 80% { transform: scaleY(1); }
+}

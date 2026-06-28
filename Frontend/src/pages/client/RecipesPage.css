@@ -1,0 +1,27 @@
+.rlist-layout { min-height: 100vh; background: var(--bg); }
+.rlist-main { max-width: 1280px; margin: 0 auto; padding: 2rem 1.5rem 3rem; }
+.rlist-header { margin-bottom: 1.5rem; }
+.rlist-title { font-family: var(--font-display); font-size: 1.75rem; font-weight: 700; color: var(--text); }
+.rlist-sub { color: var(--text-2); font-size: .88rem; margin-top: .25rem; }
+.rlist-filters { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.1rem 1.3rem; margin-bottom: 1rem; display: flex; flex-direction: column; gap: .9rem; }
+.rlist-search-wrap { display: flex; align-items: center; gap: .6rem; background: var(--surface-2); border: 1.5px solid var(--border); border-radius: var(--radius-sm); padding: .55rem .9rem; }
+.rlist-search { border: none; background: none; outline: none; font-size: .92rem; color: var(--text); flex: 1; }
+.rlist-filter-row { display: flex; align-items: center; gap: .75rem; flex-wrap: wrap; }
+.rlist-filter-group { display: flex; flex-direction: column; gap: .25rem; }
+.rlist-filter-group label { font-size: .72rem; font-weight: 700; color: var(--text-3); text-transform: uppercase; letter-spacing: .04em; }
+.rlist-filter-group select { padding: .45rem .8rem; border: 1.5px solid var(--border); border-radius: var(--radius-sm); background: var(--surface); font-size: .88rem; color: var(--text); outline: none; cursor: pointer; }
+.rlist-filter-group select:focus { border-color: var(--primary); }
+.rlist-reset { margin-top: 1.1rem; align-self: flex-end; padding: .45rem .9rem; background: none; border: 1.5px solid var(--border); border-radius: var(--radius-sm); font-size: .82rem; color: var(--text-2); cursor: pointer; }
+.rlist-reset:hover { background: var(--surface-2); color: var(--danger); border-color: var(--danger); }
+.rlist-cuisine-tabs { display: flex; gap: .4rem; flex-wrap: wrap; margin-bottom: 1.25rem; }
+.rlist-ctab { padding: .38rem .9rem; border-radius: 99px; border: 1.5px solid var(--border); background: var(--surface); font-size: .82rem; font-weight: 600; color: var(--text-2); cursor: pointer; transition: all var(--transition); }
+.rlist-ctab:hover { border-color: var(--primary); color: var(--primary); }
+.rlist-ctab--active { background: var(--primary); color: #fff; border-color: var(--primary); }
+.rlist-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.1rem; }
+.rlist-empty { display: flex; flex-direction: column; align-items: center; gap: .75rem; padding: 4rem 1rem; text-align: center; color: var(--text-2); }
+.rlist-empty span { font-size: 2.5rem; }
+.rlist-reset-btn { padding: .55rem 1.2rem; background: var(--primary-light); color: var(--primary); border: 1.5px solid var(--primary); border-radius: var(--radius-sm); font-size: .88rem; font-weight: 600; cursor: pointer; }
+.skel-card { background: var(--surface); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-sm); }
+@media (max-width: 1024px) { .rlist-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 768px) { .rlist-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 480px) { .rlist-grid { grid-template-columns: 1fr; } }

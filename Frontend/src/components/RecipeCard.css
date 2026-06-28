@@ -1,0 +1,31 @@
+.rcard {
+  background: var(--surface); border-radius: var(--radius);
+  box-shadow: var(--shadow-sm); overflow: hidden; cursor: pointer;
+  transition: transform var(--transition), box-shadow var(--transition);
+  display: flex; flex-direction: column;
+}
+.rcard:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+.rcard__img-wrap { position: relative; height: 190px; overflow: hidden; }
+.rcard__img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s ease; }
+.rcard:hover .rcard__img { transform: scale(1.05); }
+.rcard__badge {
+  position: absolute; top: .7rem; left: .7rem; padding: .25rem .6rem;
+  border-radius: 99px; font-size: .72rem; font-weight: 700; color: #fff;
+}
+.rcard__reason {
+  position: absolute; top: .7rem; right: .7rem; padding: .25rem .65rem;
+  background: rgba(0,0,0,.65); backdrop-filter: blur(4px);
+  border-radius: 99px; font-size: .72rem; font-weight: 600; color: #fff;
+}
+.rcard__body { padding: 1rem 1.1rem 1.2rem; flex: 1; display: flex; flex-direction: column; gap: .4rem; }
+.rcard__cuisine { font-size: .75rem; font-weight: 700; color: var(--primary); text-transform: uppercase; letter-spacing: .06em; }
+.rcard__title { font-family: var(--font-display); font-size: 1.05rem; color: var(--text); line-height: 1.3; font-weight: 600; }
+.rcard__desc { font-size: .82rem; color: var(--text-2); line-height: 1.5; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; }
+.rcard__meta { display: flex; align-items: center; justify-content: space-between; margin-top: .3rem; }
+.rcard__stars { color: var(--accent); font-size: .9rem; }
+.rcard__nb { color: var(--text-3); font-size: .78rem; margin-left: .3rem; }
+.rcard__time { font-size: .8rem; color: var(--text-2); font-weight: 500; }
+.rcard__calories { font-size: .8rem; color: var(--text-2); font-weight: 500; margin-left: .5rem; }
+.rcard__tags { display: flex; flex-wrap: wrap; gap: .3rem; margin-top: .3rem; }
+.rcard__tag { background: var(--surface-2); color: var(--text-2); font-size: .72rem; padding: .18rem .55rem; border-radius: 99px; font-weight: 500; border: 1px solid var(--border); }
+.rcard__tag--regime { background: var(--secondary-light); color: var(--secondary); border-color: var(--secondary); }

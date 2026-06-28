@@ -1,0 +1,23 @@
+.settings-layout { min-height: 100vh; background: var(--bg); }
+.settings-main { max-width: 760px; margin: 0 auto; padding: 2.5rem 1.5rem 4rem; }
+.settings-title { font-family: var(--font-display); font-size: 1.6rem; margin-bottom: 1.5rem; }
+
+.settings-card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 1.5rem; margin-bottom: 1.25rem;
+}
+.settings-section-title { font-size: 1.05rem; margin-bottom: .3rem; }
+.settings-section-sub { color: var(--text-2); font-size: .85rem; margin-bottom: 1.25rem; }
+
+.settings-grid { display: grid; gap: 1rem; grid-template-columns: 1fr 1fr; }
+.settings-grid > *:first-child { grid-column: 1 / -1; }
+
+.settings-success { background: var(--secondary-light); color: var(--secondary); padding: .75rem 1rem; border-radius: var(--radius-sm); }
+.settings-actions { display: flex; justify-content: flex-end; margin-top: 1rem; }
+
+.settings-card--danger { border-color: #fde2e1; }
+.settings-card--danger .settings-section-title { color: var(--danger); }
+
+@media (max-width: 600px) {
+  .settings-grid { grid-template-columns: 1fr; }
+}

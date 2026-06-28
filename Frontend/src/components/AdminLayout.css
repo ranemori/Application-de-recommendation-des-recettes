@@ -1,0 +1,15 @@
+.admin-layout {
+  display: flex;
+  min-height: 100vh;
+  background: var(--bg);
+}
+
+.admin-layout__content {
+  flex: 1;
+  min-width: 0;
+  padding: 2rem 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .admin-layout__content { padding: 1.25rem; }
+}

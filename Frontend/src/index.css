@@ -1,0 +1,126 @@
+/* ── Reset & Base ─────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --primary: #E91E63;
+  --primary-dark: #C2185B;
+  --primary-light: #FDE7EF;
+  --secondary: #FF7A1A;
+  --secondary-light: #FFEEDD;
+  --accent: #FFB347;
+  --bg: #FFFBF8;
+  --surface: #FFFFFF;
+  --surface-2: #FFF4EE;
+  --border: #F3E0E0;
+  --text: #1A1A1A;
+  --text-2: #5A5A5A;
+  --text-3: #9A9A9A;
+  --success: #27AE60;
+  --warning: #F39C12;
+  --danger: #E74C3C;
+  --info: #2980B9;
+  --radius-sm: 6px;
+  --radius: 12px;
+  --radius-lg: 20px;
+  --shadow-sm: 0 1px 4px rgba(0,0,0,.06);
+  --shadow: 0 4px 16px rgba(0,0,0,.08);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,.12);
+  --font: 'Inter', sans-serif;
+  --font-display: 'Playfair Display', serif;
+  --transition: .18s ease;
+}
+
+html { font-size: 16px; scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+button { cursor: pointer; font-family: inherit; }
+input, textarea, select { font-family: inherit; }
+
+/* ── Scrollbar ────────────────────────────────────────────────── */
+/* Hamster-themed scrollbar — warm tan/orange like the loading hamster,
+   thick enough to actually be visible (the old one was 6px in a color
+   nearly identical to the background). */
+::-webkit-scrollbar { width: 12px; height: 12px; }
+::-webkit-scrollbar-track {
+  background: #FBE9D8;
+  border-radius: 99px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, hsl(30,90%,68%), hsl(30,85%,52%));
+  border-radius: 99px;
+  border: 2px solid #FBE9D8;
+  background-clip: padding-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, hsl(0,85%,80%), hsl(30,85%,48%));
+}
+::-webkit-scrollbar-corner { background: transparent; }
+
+/* Firefox */
+html { scrollbar-width: auto; scrollbar-color: hsl(30,85%,55%) #FBE9D8; }
+
+/* ── Utilities ────────────────────────────────────────────────── */
+.sr-only { position: absolute; width:1px; height:1px; overflow:hidden; clip:rect(0,0,0,0); }
+.truncate { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.flex { display: flex; }
+.flex-col { display: flex; flex-direction: column; }
+.items-center { align-items: center; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.gap-1 { gap: .25rem; }
+.gap-2 { gap: .5rem; }
+.gap-3 { gap: .75rem; }
+.gap-4 { gap: 1rem; }
+.gap-6 { gap: 1.5rem; }
+.w-full { width: 100%; }
+.text-center { text-align: center; }
+.font-semibold { font-weight: 600; }
+.font-bold { font-weight: 700; }
+.text-sm { font-size: .875rem; }
+.text-xs { font-size: .75rem; }
+.text-lg { font-size: 1.125rem; }
+.text-xl { font-size: 1.25rem; }
+.text-2xl { font-size: 1.5rem; }
+.text-3xl { font-size: 1.875rem; }
+.opacity-60 { opacity: .6; }
+.mt-1 { margin-top: .25rem; }
+.mt-2 { margin-top: .5rem; }
+.mt-4 { margin-top: 1rem; }
+.mt-6 { margin-top: 1.5rem; }
+.mb-2 { margin-bottom: .5rem; }
+.mb-4 { margin-bottom: 1rem; }
+.mb-6 { margin-bottom: 1.5rem; }
+.p-4 { padding: 1rem; }
+.rounded { border-radius: var(--radius); }
+.grid { display: grid; }
+
+/* ── Animations ────────────────────────────────────────────────── */
+@keyframes fadeIn { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:translateY(0); } }
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes pulse { 0%,100% { opacity:1; } 50% { opacity:.5; } }
+@keyframes slideIn { from { transform: translateX(-100%); } to { transform: translateX(0); } }
+@keyframes bounceIn { 0% { transform:scale(.8); opacity:0; } 60% { transform:scale(1.05); } 100% { transform:scale(1); opacity:1; } }
+
+.animate-fade { animation: fadeIn .3s ease both; }
+.animate-bounce { animation: bounceIn .4s ease both; }
+.spinner {
+  width: 24px; height: 24px; border: 3px solid var(--border);
+  border-top-color: var(--primary); border-radius: 50%;
+  animation: spin .7s linear infinite; display: inline-block;
+}
+.spinner-lg { width:48px; height:48px; border-width:4px; }
+.skeleton {
+  background: linear-gradient(90deg, var(--surface-2) 25%, var(--border) 50%, var(--surface-2) 75%);
+  background-size: 200% 100%; animation: skeleton 1.4s infinite;
+  border-radius: var(--radius-sm);
+}
+@keyframes skeleton { 0% { background-position:200% 0; } 100% { background-position:-200% 0; } }
