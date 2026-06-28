@@ -131,14 +131,14 @@ manuellement en base (`role = 'admin'`) pour accéder à `/admin`.
 ---
 
 ## 6. Déploiement
-
+Vous pouvez tester dans le lien suivant:
+https://application-de-recommendation-des-r.vercel.app/
+ 
 Résumé rapide :
-- **Backend + PostgreSQL** → Render (ou Railway)
-- **Frontend** → Vercel (ou Netlify), avec `REACT_APP_API_URL` pointant
+- **PostgreSQL** → Neon
+- **Backend** → HuggingFace
+- **Frontend** → Vercel , avec `REACT_APP_API_URL` pointant
   vers l'URL du backend déployé
-- Les fichiers du modèle ALS (`Recommender/models/`) et les CSV doivent
-  être présents dans le dépôt déployé, ou régénérés au démarrage via les
-  scripts de seed/entraînement.
 
 ---
 
