@@ -14,10 +14,10 @@ class Settings(BaseSettings):
     DEBUG: bool = True
 
     # Database — PostgreSQL
-    DATABASE_URL: str = "postgresql://postgres:ranemori@localhost:5432/recommender_db"
+    DATABASE_URL: str = "postgresql://postgres:TON_MOTDEPASSE@localhost:5432/recommender_db"
 
     # Security
-    SECRET_KEY: str = "ranemori"
+    SECRET_KEY: str = "TON_MOTDEPASSE"
     ALGORITHM: str = "HS256"
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 60 * 24          # 24h
     REFRESH_TOKEN_EXPIRE_DAYS: int = 30
