@@ -12,6 +12,7 @@ RUN pip install --no-cache-dir -r Backend/requirements.txt
 
 COPY Backend/ Backend/
 COPY Recommender/ Recommender/
+COPY static/ static/
 
 WORKDIR /app/Backend
 
