@@ -2,7 +2,7 @@
 title: Application Recommandation Recettes
 emoji: 🍽️
 colorFrom: pink
-colorTo: orange
+colorTo: yellow
 sdk: docker
 pinned: false
 ---
