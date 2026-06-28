@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, NavLink, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import NotificationBell from './NotificationBell';
+import { resolveImageUrl } from '../utils/imageUrl';
 import './ClientNavbar.css';
 
 export default function ClientNavbar() {
@@ -62,7 +63,7 @@ export default function ClientNavbar() {
           <div className="cnav__avatar-wrap" onClick={() => setOpen(!open)}>
             <div className="cnav__avatar">
               {user?.avatar_url
-                ? <img src={user.avatar_url} alt="" />
+                ? <img src={resolveImageUrl(user.avatar_url)} alt="" />
                 : <span>{(user?.username || 'U')[0].toUpperCase()}</span>
               }
             </div>
@@ -76,7 +77,7 @@ export default function ClientNavbar() {
                 <div className="cnav__dropdown-id">
                   <div className="cnav__dropdown-avatar">
                     {user?.avatar_url
-                      ? <img src={user.avatar_url} alt="" />
+                      ? <img src={resolveImageUrl(user.avatar_url)} alt="" />
                       : <span>{(user?.username || 'U')[0].toUpperCase()}</span>
                     }
                   </div>

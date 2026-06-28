@@ -4,6 +4,7 @@ import { userAPI } from '../../services/api';
 import ClientNavbar from '../../components/ClientNavbar';
 import Button from '../../components/ui/Button';
 import Input from '../../components/ui/Input';
+import { resolveImageUrl } from '../../utils/imageUrl';
 import './ProfilePage.css';
 
 const CUISINES = [
@@ -83,7 +84,7 @@ export default function ProfilePage() {
         <div className="profile-header">
           <div className="profile-avatar profile-avatar--editable" onClick={() => avatarInputRef.current?.click()}>
             {user.avatar_url
-              ? <img src={user.avatar_url} alt="" className="profile-avatar-img" />
+              ? <img src={resolveImageUrl(user.avatar_url)} alt="" className="profile-avatar-img" />
               : (user.username || 'U')[0].toUpperCase()
             }
             <div className="profile-avatar-overlay">{avatarUploading ? '…' : 'Modifier'}</div>

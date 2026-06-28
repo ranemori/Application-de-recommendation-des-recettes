@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { interactionAPI } from '../services/api';
+import { resolveImageUrl } from '../utils/imageUrl';
 import './RecipeCard.css';
 
 const PLACEHOLDER = 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=70';
@@ -25,7 +26,7 @@ export default function RecipeCard({ recipe, reason, score, showReason = false }
       onKeyDown={e => e.key === 'Enter' && handleClick()}>
       <div className="rcard__img-wrap">
         <img
-          src={recipe.image_url || PLACEHOLDER}
+          src={resolveImageUrl(recipe.image_url) || PLACEHOLDER}
           alt={recipe.title}
           className="rcard__img"
           onError={e => { e.target.src = PLACEHOLDER; }}

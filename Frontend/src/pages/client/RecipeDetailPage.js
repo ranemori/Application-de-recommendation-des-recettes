@@ -7,6 +7,7 @@ import RecipeCard from '../../components/RecipeCard';
 import Button from '../../components/ui/Button';
 import Loader from '../../components/ui/Loader';
 import ShareMenu from '../../components/ShareMenu';
+import { resolveImageUrl } from '../../utils/imageUrl';
 import './RecipeDetailPage.css';
 
 const PLACEHOLDER = 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800&q=70';
@@ -129,7 +130,7 @@ export default function RecipeDetailPage() {
 
         {/* Hero image */}
         <div className="rdetail-hero">
-          <img src={recipe.image_url || PLACEHOLDER} alt={recipe.title} className="rdetail-img"
+          <img src={resolveImageUrl(recipe.image_url) || PLACEHOLDER} alt={recipe.title} className="rdetail-img"
             onError={e => { e.target.src = PLACEHOLDER; }} />
           <div className="rdetail-hero-overlay">
             <div className="rdetail-hero-inner">
@@ -301,7 +302,7 @@ export default function RecipeDetailPage() {
                     <div key={c.id} className="cmt-card">
                       <div className="cmt-card__avatar">
                         {c.user?.avatar_url
-                          ? <img src={c.user.avatar_url} alt="" className="cmt-card__avatar-img" />
+                          ? <img src={resolveImageUrl(c.user.avatar_url)} alt="" className="cmt-card__avatar-img" />
                           : (c.user?.username || 'U')[0].toUpperCase()
                         }
                       </div>
