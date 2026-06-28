@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Depends, HTTPException, UploadFile, File
+from fastapi import APIRouter, Depends, HTTPException, UploadFile, File, Response
 from sqlalchemy.orm import Session
 from sqlalchemy import func
 from typing import List
@@ -56,7 +56,14 @@ def deactivate_account(
     payload=Depends(require_user),
     db: Session = Depends(get_db)
 ):
- 
+    """Deactivates the current user's account.
+
+    This is a soft deactivation (is_active=False), not a hard delete —
+    the account and its data (recipes, comments, interactions) are kept
+    so the model and history stay intact, and an admin could reactivate
+    it later if needed. The frontend logs the user out immediately after
+    a successful call, and login is rejected for deactivated accounts.
+    """
     user = db.query(User).filter(User.id == int(payload["sub"])).first()
     if not user:
         raise HTTPException(404, "User not found")
@@ -80,16 +87,24 @@ def upload_avatar(
     if not user:
         raise HTTPException(404, "User not found")
 
-    os.makedirs(AVATAR_DIR, exist_ok=True)
-    filename = f"{user.id}_{uuid.uuid4().hex[:8]}{ext}"
-    dest_path = os.path.join(AVATAR_DIR, filename)
-    with open(dest_path, "wb") as f:
-        f.write(file.file.read())
-
-    user.avatar_url = f"/static/avatars/{filename}"
+    content_type = file.content_type or "image/jpeg"
+    user.avatar_data = file.file.read()
+    user.avatar_mime = content_type
+    # Served from the DB-backed route below — no file on disk involved,
+    # so it survives container restarts / redeploys / a deleted local file.
+    user.avatar_url = f"/api/v1/users/{user.id}/avatar"
     db.commit()
     db.refresh(user)
     return user
+
+
+@router.get("/{user_id}/avatar")
+def get_avatar(user_id: int, db: Session = Depends(get_db)):
+    """Serves the avatar straight from the database (see upload_avatar)."""
+    user = db.query(User).filter(User.id == user_id).first()
+    if not user or not user.avatar_data:
+        raise HTTPException(404, "No avatar")
+    return Response(content=user.avatar_data, media_type=user.avatar_mime or "image/jpeg")
 
 
 @router.post("/onboarding", response_model=UserPublic)
@@ -123,7 +138,13 @@ def get_saved_recipes(
     payload=Depends(require_user),
     db: Session = Depends(get_db)
 ):
-   
+    """Recipes the user currently has saved.
+
+    Each click on 'Sauvegarder' inserts a new Interaction row (save toggle
+    history) rather than updating a single flag, so 'currently saved' means:
+    for each recipe, look at the MOST RECENT 'save' interaction and check
+    whether its score is 1 (saved) rather than 0 (un-saved).
+    """
     user_id = int(payload["sub"])
 
     latest_save_subq = (
