@@ -4,7 +4,7 @@ SQLAlchemy ORM models
 
 from sqlalchemy import (
     Column, Integer, String, Text, Float, Boolean,
-    DateTime, ForeignKey, Enum, JSON, UniqueConstraint, Index
+    DateTime, ForeignKey, Enum, JSON, UniqueConstraint, Index, LargeBinary
 )
 from sqlalchemy.orm import relationship
 from sqlalchemy.sql import func
@@ -54,6 +54,14 @@ class User(Base):
 
     # Profile
     avatar_url = Column(String(500), nullable=True)
+    # The avatar's actual bytes, stored directly in Postgres instead of on
+    # disk. A file written to /static/avatars/ disappears the moment the
+    # container restarts on platforms with an ephemeral filesystem (e.g.
+    # Hugging Face Spaces redeploys, or simply deleting the local file) —
+    # storing it in the database means it survives regardless of what
+    # happens to any particular server's disk.
+    avatar_data = Column(LargeBinary, nullable=True)
+    avatar_mime = Column(String(50), nullable=True)
     region = Column(String(100), nullable=True)
     pays = Column(String(100), nullable=True)
 
@@ -62,7 +70,11 @@ class User(Base):
     preferences_cuisine = Column(JSON, default=list)
     onboarding_done = Column(Boolean, default=False)
 
-    # ALS internal index — ONLY set when this exact user was included in an actual ALS training run
+    # ALS internal index — ONLY set when this exact user was included in an
+    # actual ALS training run. Never derive this from the DB id: the
+    # synthetic training dataset's user_id space (1..100) overlaps with
+    # Postgres's auto-increment ids, which would otherwise silently borrow
+    # a stranger's taste profile for a brand-new real user.
     als_user_idx = Column(Integer, nullable=True, index=True)
 
     # Password reset
@@ -107,6 +119,12 @@ class Recipe(Base):
     # Denormalized rating cache
     note_moyenne = Column(Float, default=0.0)
     nb_avis = Column(Integer, default=0)
+    # Immutable baseline imported once from raw_recipes.csv (the demo
+    # dataset's "social proof" — e.g. Pastilla starts with 95 seeded
+    # reviews at 4.9). Real user ratings are blended ON TOP of this in
+    # _recompute_recipe_rating(), never replacing it outright — otherwise
+    # a recipe's very first real rating would wipe out 95 seeded reviews
+    # down to "1 review", which is what was happening before this fix.
     seed_note_moyenne = Column(Float, default=0.0)
     seed_nb_avis = Column(Integer, default=0)
 
@@ -256,6 +274,8 @@ class NotificationType(str, enum.Enum):
 
 
 class Notification(Base):
+    """In-app notifications — e.g. 'new recommendations are ready for you'
+    triggered after an ALS retrain, or replies to a comment."""
 
     __tablename__ = "notifications"
 
