@@ -21,9 +21,6 @@
   animation: auth-gif-drift 9s ease-in-out infinite;
   transition: opacity .4s ease;
 }
-.auth__panel--login .auth__panel-gif { background-image: url('../../assets/images/jump-vegan.gif'); }
-.auth__panel--register .auth__panel-gif { background-image: url('../../assets/images/illustration-smile.gif'); }
-.auth__panel--forgot .auth__panel-gif { background-image: url('../../assets/images/happy-carrot.gif'); }
 
 @keyframes auth-gif-drift {
   0%, 100% { transform: scale(1) translate(0, 0); }
