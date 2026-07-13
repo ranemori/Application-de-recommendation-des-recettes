@@ -5,6 +5,7 @@ import { Button } from '../../components/ui';
 import Input from '../../components/ui/Input';
 import ErrorAlert from '../../components/ui/ErrorAlert';
 import './AuthPage.css';
+import happyCarrot from '../../assets/images/happy-carrot.gif';
 
 export default function ForgotPasswordPage() {
   const nav = useNavigate();
@@ -61,7 +62,7 @@ export default function ForgotPasswordPage() {
   return (
     <div className="auth">
       <div className="auth__panel auth__panel--forgot">
-        <div className="auth__panel-gif" />
+        <div className="auth__panel-gif" style={{ backgroundImage: `url(${happyCarrot})` }} />
         <div className="auth__panel-content">
           <h1 className="auth__panel-title">À Ton Goût</h1>
           <p className="auth__panel-sub">Réinitialisation du mot de passe</p>
