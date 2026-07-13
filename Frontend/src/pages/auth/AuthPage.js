@@ -5,6 +5,8 @@ import { Button } from '../../components/ui';
 import Input from '../../components/ui/Input';
 import ErrorAlert from '../../components/ui/ErrorAlert';
 import './AuthPage.css';
+import jumpVegan from '../../assets/images/jump-vegan.gif';
+import illustrationSmile from '../../assets/images/illustration-smile.gif';
 
 export default function AuthPage({ mode = 'login' }) {
   const { login, register } = useAuth();
@@ -58,7 +60,7 @@ export default function AuthPage({ mode = 'login' }) {
     <div className="auth">
       {/* Left decorative panel */}
       <div className={`auth__panel ${tab === 'login' ? 'auth__panel--login' : 'auth__panel--register'}`}>
-        <div className="auth__panel-gif" />
+        <div className="auth__panel-gif" style={{ backgroundImage: `url(${tab === 'login' ? jumpVegan : illustrationSmile})` }}/>
         <div className="auth__panel-content">
           <h1 className="auth__panel-title">À Ton Goût</h1>
           <p className="auth__panel-sub">Votre moteur de recommandation culinaire intelligent</p>
